@@ -86,6 +86,10 @@ macOS 界面随系统语言显示为英语或简体中文，暂不支持的语�
 | `hide_titles` | `false` | 截图模式：用通用名称替代会话标题，并隐藏账户 |
 | `check_updates` | `true` | 每 10 分钟向 GitHub 查询一次是否有新版本 |
 
+## Linux 托盘面板
+
+Linux 用户可使用新增的 GTK / AppIndicator 面板。安装依赖后运行 `./linux/install.sh`，再运行 `~/.local/bin/nerfed-tray --show`。支持顶栏表情、近期会话结果、展开报告、手动检测、频率设置和登录自启动；详情见 [Linux 安装说明](linux/README.md)。
+
 ## 账户
 
 不同 Codex 账户共享会话，但降配结果可能与账户有关。因此，每次检测都会记录当时登录的账户（只保存哈希，不保存账户 ID）。切换账户后，旧结果会标为“来自其他账户”，相应会话会重新检测。
